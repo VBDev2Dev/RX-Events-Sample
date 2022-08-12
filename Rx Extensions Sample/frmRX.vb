@@ -16,6 +16,11 @@ Public Class frmRX
 
     Private Sub frmRX_Shown(sender As Object, e As EventArgs) Handles Me.Shown
 
+        Dim imgForm As New frmImage
+        imgForm.Show()
+
+
+
         Dim mDown = From eDown In formMouseDown.Events
                     Select MouseEventArgsInfo.FromMouseEventArgs(eDown.EventArgs, eDown.Sender)
 
@@ -66,6 +71,11 @@ Public Class frmRX
                                                        Me.Location = MoveTo
 
                                                    End Sub))
+        Activate()
+
+
+
+
     End Sub
 
 
