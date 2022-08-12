@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Rx Extensions Sample", "Rx Extensions Sample\Rx Extensions Sample.vbproj", "{FE987BE6-434B-479A-A61E-8115140CF06C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE987BE6-434B-479A-A61E-8115140CF06C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE987BE6-434B-479A-A61E-8115140CF06C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE987BE6-434B-479A-A61E-8115140CF06C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE987BE6-434B-479A-A61E-8115140CF06C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EAA600F-B767-47F3-8266-CB9E60C9DD56}
+	EndGlobalSection
+EndGlobal
