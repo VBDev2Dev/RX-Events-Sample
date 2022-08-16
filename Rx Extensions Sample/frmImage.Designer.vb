@@ -41,6 +41,7 @@ Partial Class frmImage
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.pbImage)
+        Me.DoubleBuffered = True
         Me.Name = "frmImage"
         Me.Text = "Form1"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
