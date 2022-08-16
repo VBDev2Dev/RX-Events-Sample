@@ -32,7 +32,7 @@ Partial Class frmRX
         Me.lblCoordinates.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblCoordinates.Location = New System.Drawing.Point(0, 0)
         Me.lblCoordinates.Name = "lblCoordinates"
-        Me.lblCoordinates.Size = New System.Drawing.Size(0, 15)
+        Me.lblCoordinates.Size = New System.Drawing.Size(2, 17)
         Me.lblCoordinates.TabIndex = 0
         '
         'frmRX
