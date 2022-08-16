@@ -29,6 +29,7 @@ Partial Class frmRX
         'lblCoordinates
         '
         Me.lblCoordinates.AutoSize = True
+        Me.lblCoordinates.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblCoordinates.Location = New System.Drawing.Point(0, 0)
         Me.lblCoordinates.Name = "lblCoordinates"
         Me.lblCoordinates.Size = New System.Drawing.Size(0, 15)
