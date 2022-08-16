@@ -16,7 +16,8 @@ Public Class frmRX
 
     Private Sub frmRX_Shown(sender As Object, e As EventArgs) Handles Me.Shown
 
-        Dim imgForm As New frmImage
+        Dim imgForm As New frmImage()
+        Me.Owner = imgForm
         imgForm.Show()
 
 
