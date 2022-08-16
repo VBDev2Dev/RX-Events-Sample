@@ -32,13 +32,21 @@ Public Class frmRX
                     Select MouseEventArgsInfo.FromMouseEventArgs(eMv.EventArgs, eMv.Sender)
 
 
+        Dim oStop = From u In mUp ' build observable that will stop drag drop like behaviour 
+                    Select u.EventArgs.Button
+
 
 
         Dim mover = (From st In mDown
-                     From mv In mMove.
+                     From mv In mMove.Where(Function(m) m.EventArgs.Button.HasFlag(st.EventArgs.Button)).
                          StartWith(st).
-                         TakeUntil(formMouseUp.Events)
-                     Select New With {.Move = mv, .Start = st}).Repeat
+                         TakeUntil(oStop.Where(Function(u) u.HasFlag(st.EventArgs.Button)))
+                     Select New With {
+                         .Move = mv,
+                         .Start = st,
+                         .Distance = Math.Abs(Math.Sqrt(Math.Pow((mv.Location.X - st.Location.X), 2) + Math.Pow((mv.Location.Y - st.Location.Y), 2)))
+                         }).'Where(Function(m) m.Distance >= 10).
+                         Repeat
 
 
 
@@ -70,7 +78,7 @@ Public Class frmRX
                                                        Dim diff = msE.Start.ControlLocation - msE.Start.ScreenLocation
                                                        Dim MoveTo = PointToScreen(msE.Move.Location) + diff
                                                        Me.Location = MoveTo
-
+                                                       'Debug.WriteLine($"Distance:{msE.Distance}")
                                                    End Sub))
         Activate()
 
